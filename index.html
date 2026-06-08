@@ -494,7 +494,7 @@ tokens.forEach((tok, i) => {
 const TOTAL = Object.keys(normToIndices).length;
 
 // Also handle title words
-const titleWords = TITLE.split(/\s+/).map(normalize);
+const titleWords = tokenize(TITLE).filter(isWord).map(normalize);
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 const state = {
