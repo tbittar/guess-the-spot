@@ -431,8 +431,7 @@ function normalize(str) {
 // ─── TOKENISE TEXT ────────────────────────────────────────────────────────────
 // Split into tokens preserving punctuation/spaces as non-word tokens
 function tokenize(text) {
-  // Split by word boundaries but keep separators
-  return text.split(/(\b|\s+|[^a-zA-ZÀ-ÿ0-9]+)/u).filter(t => t !== '');
+  return text.split(/([^a-zA-ZÀ-ÿ0-9]+)/u).filter(t => t !== '');
 }
 
 // Check if a token is a "word" (contains at least one letter/digit)
