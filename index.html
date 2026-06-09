@@ -599,7 +599,8 @@ function triggerWin() {
   // Reveal everything
   state.found = new Set(Object.keys(normToIndices));
   updateDisplay();
-  document.getElementById("win-count").textContent = state.attempts;
+  const winCount = document.getElementById("win-count");
+  if (winCount) winCount.textContent = state.attempts;
   document.getElementById("feedback").textContent = "";
   document.getElementById("feedback").className = "";
   const ws = document.getElementById("win-screen");
