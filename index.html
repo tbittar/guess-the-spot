@@ -305,7 +305,7 @@
 
 <header>
   <div class="logo">Guess the <span>Spot</span></div>
-  <div class="subtitle">Devine le lieu</div>
+  <div class="subtitle">Béa va-t-elle trouver son chemin ?</div>
 </header>
 
 <div class="page-layout">
@@ -337,7 +337,7 @@
 
   <hr class="rules-divider" />
 
-  <p class="tip">Utilise le bouton 💡 Indice si tu es bloqué·e. Tu as droit à plusieurs indices.</p>
+  <p class="tip">Utilise le bouton 💡 Indice si tu es bloquée. Tu as droit à plusieurs indices.</p>
 </aside>
 
 <div class="container">
@@ -365,8 +365,8 @@
     <div class="applause">🎭</div>
     <h2>Bravo !</h2>
     <p>
-      Tu as trouvé en <strong id="win-count"></strong> essais.<br/>
-      La réponse était : <em style="color:var(--gold)">Théâtre des Champs-Élysées</em>
+      Bravo Béa !! Rdv au <em style="color:var(--gold)">Théâtre des Champs-Élysées</em> !
+      PS: N'oublie pas ta tenue de soirée, et surtout ton sens de l'orientation !
     </p>
   </div>
 </div>
@@ -377,49 +377,7 @@
 // ─── TEXT & TITLE ─────────────────────────────────────────────────────────────
 const TITLE = "Théâtre des Champs-Élysées";
 
-const RAW_TEXT = `Le théâtre des Champs-Élysées est une salle de spectacle située au 15, avenue Montaigne, dans le 8e arrondissement de Paris, inaugurée le 2 avril 1913. Le bâtiment abrite en réalité trois salles : le Théâtre des Champs-Élysées (1 905 places), la Comédie des Champs-Élysées (601 places) et le Studio des Champs-Élysées (230 places). Premier bâtiment parisien construit entièrement en béton armé, il a été conçu par les architectes Auguste Perret et son frère Gustave Perret, en collaboration avec l'architecte belge Henry van de Velde. La façade est ornée de bas-reliefs d'Antoine Bourdelle. Classé monument historique depuis 1957, il appartient depuis 1994 à la Caisse des dépôts et consignations. Il est réputé pour son acoustique exceptionnelle et pour avoir accueilli des premières mémorables, notamment Le Sacre du printemps d'Igor Stravinsky en 1913, ainsi que des artistes comme Joséphine Baker, Louis Armstrong, Ella Fitzgerald ou encore Maria Callas.
-
-Histoire
-
-Le projet de construction d'une grande salle de concert à Paris est porté au début du XXe siècle par Gabriel Astruc, imprésario et fondateur de la Société musicale. Il obtient un terrain avenue Montaigne et confie d'abord les plans à l'architecte belge Henry van de Velde en 1906. Des divergences artistiques conduisent à confier le chantier aux frères Perret, Auguste et Gustave, qui reprennent et transforment profondément le projet en adoptant le béton armé comme matériau principal.
-
-La construction débute en 1911. Le bâtiment est achevé en un temps record et inauguré le 2 avril 1913 par le président de la République Raymond Poincaré, en présence de toute l'élite artistique et mondaine parisienne. La saison inaugurale est marquée par la venue des Ballets russes de Serge de Diaghilev, qui y présentent plusieurs créations mondiales. Le 29 mai 1913, la création du Sacre du printemps, ballet de Stravinsky chorégraphié par Nijinsky, provoque un scandale retentissant dans la salle : le public, divisé entre enthousiastes et protestataires, trouble la représentation par des cris et des sifflets, au point que les danseurs ne peuvent entendre l'orchestre. Cet événement reste l'un des plus célèbres scandales de l'histoire de la musique.
-
-Pendant la Première Guerre mondiale, le théâtre est mis à disposition de la Croix-Rouge. Dans l'entre-deux-guerres, il accueille les grandes vedettes du jazz américain, notamment Joséphine Baker lors de la Revue nègre en 1925, puis Louis Armstrong, Duke Ellington et Ella Fitzgerald. La salle devient un haut lieu du divertissement et de la vie culturelle parisienne.
-
-Durant la Seconde Guerre mondiale, le théâtre reste ouvert et continue à programmer des spectacles. Après la Libération, il retrouve rapidement son rayonnement international. En 1957, il est classé monument historique, reconnaissance de son importance architecturale et culturelle. En 1994, la Caisse des dépôts et consignations en devient propriétaire et entreprend d'importants travaux de restauration.
-
-Architecture
-
-Le théâtre des Champs-Élysées est considéré comme un chef-d'œuvre de l'architecture moderne du début du XXe siècle. Il est le premier bâtiment parisien entièrement construit en béton armé, technique alors novatrice qui permettait des portées importantes et une grande liberté formelle. Auguste Perret, théoricien du béton armé, affirme avec ce bâtiment la noblesse de ce matériau qu'il utilise à la fois pour la structure et pour la décoration.
-
-La façade principale, sobre et rythmée, est ornée de bas-reliefs en marbre créés par le sculpteur Antoine Bourdelle. Ces reliefs représentent des allégories de la Danse et de la Musique, et s'intègrent harmonieusement dans la composition architecturale. Bourdelle a également réalisé les frises et les médaillons intérieurs.
-
-L'intérieur de la grande salle, d'une capacité de 1 905 places, est décoré de peintures murales par Maurice Denis et Ker-Xavier Roussel, représentant des scènes mythologiques et des allégories musicales. Le plafond est orné d'une vaste composition symbolisant l'harmonie des arts. Le foyer principal est également décoré d'œuvres de Denis et de sculptures de Bourdelle.
-
-Les trois salles du bâtiment répondent à des usages différents. La grande salle accueille les opéras, les concerts symphoniques et les ballets. La Comédie des Champs-Élysées, de taille intermédiaire avec ses 601 places, est dédiée au théâtre et aux récitals. Le Studio, avec ses 230 places, permet des représentations plus intimistes. Cette disposition tripartite était novatrice pour l'époque et a influencé la conception des salles de spectacle ultérieures.
-
-Acoustique et technique
-
-L'acoustique du théâtre des Champs-Élysées est réputée parmi les meilleures du monde. Elle résulte d'une conception soignée de la salle, avec ses murs inclinés, ses matériaux absorbants et son volume calculé pour favoriser la diffusion du son. De nombreux chefs d'orchestre et solistes considèrent cette salle comme l'une des plus agréables pour jouer.
-
-Le théâtre a été équipé au fil des décennies des technologies les plus modernes de sonorisation, d'éclairage et de machinerie scénique, tout en préservant son esthétique d'origine. Des travaux réguliers de rénovation ont permis de maintenir la qualité acoustique et le confort du public.
-
-Vie musicale et artistique
-
-Depuis son inauguration, le théâtre des Champs-Élysées a accueilli les plus grands noms de la musique classique, de l'opéra, du ballet et du jazz. Parmi les artistes qui s'y sont produits figurent Arturo Toscanini, Wilhelm Furtwängler, Herbert von Karajan, Dietrich Fischer-Dieskau, Birgit Nilsson, Maria Callas, Renata Tebaldi, Carlo Bergonzi et les plus grands orchestres internationaux.
-
-Le théâtre a été le cadre de nombreuses créations mondiales et de premières françaises d'œuvres majeures du répertoire. Outre Le Sacre du printemps, on y a créé des ballets de Ravel, de Debussy et de nombreux compositeurs du XXe siècle. Les Ballets russes y ont présenté des saisons entières avec des décors de Picasso, Matisse et Braque.
-
-Dans les années 1920 et 1930, le théâtre s'ouvre au music-hall et au jazz. Joséphine Baker y triomphe avec la Revue nègre, spectacle qui fait scandale et passionne le tout-Paris. Bessie Smith, Louis Armstrong, Duke Ellington, Cab Calloway et de nombreux autres musiciens américains y se produisent devant des publics enthousiastes.
-
-Après la Seconde Guerre mondiale, le théâtre retrouve son rôle de scène internationale de premier plan. Les tournées des grands opéras étrangers, notamment le Bolchoï, le Metropolitan Opera et la Scala de Milan, y font étape. Les récitals de Maria Callas au théâtre des Champs-Élysées dans les années 1950 et 1960 sont restés légendaires.
-
-Direction et gestion
-
-Le théâtre a connu plusieurs directeurs illustres depuis sa fondation. Gabriel Astruc, son créateur, en assume la première direction mais doit céder sa place dès 1914 en raison de difficultés financières. La gestion de la salle a ensuite été assurée par diverses sociétés jusqu'à ce que la Caisse des dépôts et consignations en prenne le contrôle en 1994.
-
-Sous la direction de Dominique Meyer, puis de Michel Franck à partir de 2013, le théâtre a renforcé son positionnement comme grande scène lyrique et symphonique internationale, tout en maintenant une programmation variée incluant la danse, les récitals et les concerts de musique de chambre. La résidence de l'Orchestre National de France et de l'Orchestre Philharmonique de Radio France y contribue à la vitalité de la programmation.`;
+const RAW_TEXT = `Le théâtre des Champs-Élysées est une salle de spectacle située au 15, avenue Montaigne, dans le 8e arrondissement de Paris, inaugurée le 2 avril 1913. Le bâtiment abrite en réalité trois salles : le Théâtre des Champs-Élysées (1 905 places), la Comédie des Champs-Élysées (601 places) et le Studio des Champs-Élysées (230 places). Premier bâtiment parisien construit entièrement en béton armé, il a été conçu par les architectes Auguste Perret et son frère Gustave Perret, en collaboration avec l'architecte belge Henry van de Velde. La façade est ornée de bas-reliefs d'Antoine Bourdelle. Classé monument historique depuis 1957, il appartient depuis 1994 à la Caisse des dépôts et consignations. Il est réputé pour son acoustique exceptionnelle et pour avoir accueilli des premières mémorables, notamment Le Sacre du printemps d'Igor Stravinsky en 1913, ainsi que des artistes comme Joséphine Baker, Louis Armstrong, Ella Fitzgerald ou encore Maria Callas.`
 
 // ─── NORMALISATION ────────────────────────────────────────────────────────────
 function normalize(str) {
